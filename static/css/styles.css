@@ -1,4 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css?family=Capriola');
+
+body {
+  background-color: rgb(80, 65, 138);
+  background-size: cover;
+}
+
+@keyframes grow {
+  to {
+    width:125%;
+  }
+from {
+    width:75%;
+  }
+}
 #map {
   height: 400px;
   width: 100%;
+  margin: 10px;
+  border-radius: 25px;
  }
+
+main {
+  display:flex;
+  flex-direction: column;
+
+}
+.animate {
+  font-family: 'Capriola', sans-serif;
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+  animation-name:grow;
+  animation-duration: 8s;
+  animation-timing-function:ease-in-out;
+  animation-delay:1s;
+  animation-iteration-count:14;
+  animation-direction:alternate;
+  animation-fill-mode:backwards;
+  color: white;
+
+}
+#slider {
+  margin-top: 15px;
+}
+
+#row {
+  line-height: inherit;
+}
+
+td {
+  font-weight: bold;
+}
+.table{
+  color: white;
+  background-color:rgb(24, 69, 62, 50%);
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 4px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.popUpstyle {
+  background-color: rgb(175, 169, 205);
+}

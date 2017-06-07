@@ -1,11 +1,26 @@
-# My Portfolio
+# TriMet Bus Stop Locator
 
-#### _Created a bus-stop application using apis 6/5/17
+#### Created a bus-stop application using apis 6/5/17
 
-#### By Michael Poehner
+## Table of Contents
+
+## Background
+
+A more descriptive paragrph, with four or five sentences. What does this thing actually do? Where did the idea come from.
+
+## Install
+
+Quickest and easiest way to install is:
+
+`git clone <url>`
+
+
+## Usage
+This is only a documentation package 
+
 
 ## Description
-Creating a web site that will take in your location and show on a map where the nearest bus-stop is
+Creating a web site that will take in your location and show on a map where the nearest bus-stop is.
 
 
 ## Known Bugs
