@@ -17,10 +17,9 @@ from {
 #map {
   height: 400px;
   width: 100%;
-  margin: 10px;
+  /*margin: 10px;*/
   border-radius: 25px;
  }
-
 
 .container {
   display: flex;
@@ -46,39 +45,42 @@ from {
   animation-direction:alternate;
   animation-fill-mode:backwards;
   color: white;
-
 }
+
+.ui-slider .ui-slider-handle {
+position: absolute;
+z-index: 2;
+width: 2.2em;
+height: 1.2em;
+cursor: default;
+-ms-touch-action: none;
+touch-action: none;
+font-weight: bold;
+border-radius: 40px;
+text-align: center;
+}
+
 #slider {
-  margin-top: 15px;
+  margin: 10px;
+  background-color:rgba(233, 233, 215, 0.41);
+  color:white;
 }
 
 #row {
   line-height: inherit;
 }
 
-/*.container2{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}*/
 table {
   display: table;
-  /*flex-direction: row;
-  justify-content: flex-start;*/
-  /*align-items: center;*/
   color: white;
-  font-weight: bold;
   background-color:rgb(24, 69, 62, 50%);
   width: 100%;
-  box-sizing: padding-box;
-  border: 1px solid white;
 
 }
 th, td, tr{
-  border: 1px solid white;
+  border: .25px dotted white;
   text-align: center;
 }
 
-/*.popUpstyle {
-  background-color: rgb(175, 169, 205);
-}*/
+.gm-style .gm-style-iw {
+  }
