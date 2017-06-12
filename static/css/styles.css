@@ -21,11 +21,18 @@ from {
   border-radius: 25px;
  }
 
-main {
-  display:flex;
-  flex-direction: column;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  box-sizing: border-box;
 }
+
 .animate {
   font-family: 'Capriola', sans-serif;
   display:flex;
@@ -49,19 +56,29 @@ main {
   line-height: inherit;
 }
 
-td {
-  font-weight: bold;
-}
-.table{
+/*.container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}*/
+table {
+  display: table;
+  /*flex-direction: row;
+  justify-content: flex-start;*/
+  /*align-items: center;*/
   color: white;
+  font-weight: bold;
   background-color:rgb(24, 69, 62, 50%);
+  width: 100%;
+  box-sizing: padding-box;
+  border: 1px solid white;
+
 }
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-    padding: 4px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
+th, td, tr{
+  border: 1px solid white;
+  text-align: center;
 }
-.popUpstyle {
+
+/*.popUpstyle {
   background-color: rgb(175, 169, 205);
-}
+}*/
