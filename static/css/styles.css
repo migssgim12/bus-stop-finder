@@ -53,11 +53,11 @@ z-index: 2;
 width: 2.2em;
 height: 1.2em;
 cursor: default;
--ms-touch-action: none;
-touch-action: none;
+color: white;
 font-weight: bold;
-border-radius: 40px;
+border-radius: 20px;
 text-align: center;
+background-color: rgba(25, 47, 105, 0.50);
 }
 
 #slider {
@@ -82,5 +82,10 @@ th, td, tr{
   text-align: center;
 }
 
-.gm-style .gm-style-iw {
-  }
+/*div .gm-style-iw {
+  display: flex;
+  justify-content: center;
+  font-family: gothambook;
+  text-align: center;
+  font-size: 3em;
+}*/

@@ -19,27 +19,12 @@ function addStoptoTable(index, bus) {
 
 function makeInfoWindow(bus) {
   //Generates and ads infowindow Html to marker objects
-  //
-  // desc
-  // :
-  // "SW Kelly & Corbett"
-  // dir
-  // :
-  // "Northbound"
-  // lat
-  // :
-  // 45.5019212692922
-  // lng
-  // :
-  // -122.675276776225
-  // locid
-  // :
-  // 3116
+
+
   let $description = $('<p>').text(bus.desc);
   let $heading = $('<h4>').text(`${bus.locid}  -->  ${bus.dir}`);
   // let $direction =$('<h>').text(bus.dir)
   let $body = $('<section>').append($heading, $description);
-
   let $content = $('<main>', {'class': 'popUpstyle'}).append($body);
 
   return $content.html();
@@ -62,6 +47,7 @@ function addBusStopMarker(bus) {
 
     stopMarker.addListener('click', function() {
       infowindow.open(map, stopMarker);
+
     });
 
   // To add the marker to the map, call setMap();
@@ -73,8 +59,7 @@ function addBusStopMarker(bus) {
 function populate(busses){
     $.each(busses, function(index, bus){
       addStoptoTable(index, bus); //Add the stopMarker
-      addBusStopMarker(bus)
-
+      addBusStopMarker(bus);
     });
 }
 
@@ -101,8 +86,6 @@ function fetch_arrivals(locID){
 
 
 
-
-
 function fetcher(loc, meters) {
   if (typeof meters === 'undefined') {
     let meters = '125';
@@ -110,7 +93,8 @@ function fetcher(loc, meters) {
   var request_params = {'ll': `${loc.lat}, ${loc.lng}`,
                        'appID':'99C513765C3D3D0CD6E17B829',
                        'json':'true',
-                       'meters':meters};
+                       'meters':meters
+                       };
 
 
   $.ajax({
@@ -192,6 +176,7 @@ function clearTable(){
 
 function updateStops(event, ui) {
   console.log("Dropped the slider");
+
   //Get geolocations
   //get new bus data
   // clear the map
